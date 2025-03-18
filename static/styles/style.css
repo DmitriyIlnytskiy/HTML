@@ -43,16 +43,39 @@
 .navigation-bar>nav>ul>li>a:hover{
     background-color: #AEAB56;
 }
-
+/*
 .header1{
     background-color: #F85454;
-    /*width: 600px;*/
+    /*width: 600px;*\
     width: 30%;
     display: inline-block;
 
     /*padding: 25px 40px; 
     margin-left: 40px;
-    margin-top: 80px;*/
+    margin-top: 80px;*\
+    padding: 2.5vh 4vh;
+    margin-left: 4vh;
+    margin-top: 8vh;
+
+    display: flex;
+    align-items: center;  /* Centers vertically *\
+    justify-content: flex-start;  /* Aligns text to the left *\
+    /*padding-left: 20px; /* Adds space from the left *\
+    padding-left: 2vh;
+
+    color: #FEFFFC;
+    /*font-size:34px;*\
+    font-size: 3.4vh;
+    font-weight: bold; 
+}
+*/
+
+.header1 {
+    background-color: #F85454;
+    display: inline-block;
+    width: 30%;
+    max-width: 600px;
+
     padding: 2.5vh 4vh;
     margin-left: 4vh;
     margin-top: 8vh;
@@ -60,24 +83,21 @@
     display: flex;
     align-items: center;  /* Centers vertically */
     justify-content: flex-start;  /* Aligns text to the left */
-    /*padding-left: 20px; /* Adds space from the left */
-    padding-left: 2vh;
 
     color: #FEFFFC;
-    /*font-size:34px;*/
-    font-size: 3.4vh;
+    font-size: 2rem; /* Use rem for font sizes */
     font-weight: bold; 
 }
-
+/*
 .text1{
-    /*width: 900px;*/
+    /*width: 900px;*\
     width: 90vh;
     display: block;
 
     /*margin-left: 40px;
     margin-top: 40px; 
 
-    font-size: 28px;*/
+    font-size: 28px;*\
     
     margin-left: 4vh;
     margin-top: 4vh; 
@@ -87,6 +107,17 @@
     font-weight:500;
 
     color: #FEFFFC;
+}
+*/
+.text1 {
+    display: block;
+    width: 90%;
+    max-width: 900px;
+    margin-left: 4vh;
+    margin-top: 4vh;
+
+    color: #FEFFFC;
+    font-size: 1.7rem; /* Use rem for font sizes */
 }
 
 .info-buttons{
@@ -126,3 +157,33 @@
     background: linear-gradient(to right, #BD5FF4, #6E378E);
     
 }
+@media (max-width: 768px) {
+    /* Styles for screens 768px and smaller */
+    .header1 {
+      width: 90%; /* Adjust width for smaller screens */
+      font-size: 1.6rem; 
+      margin-left: 5%;
+    }
+  
+    .text1 {
+      width: 90%;
+      font-size: 1.2rem;
+      margin-left: 5%;
+    }
+  
+      .navigation-bar-buttons>ul{
+          flex-direction: column;
+          align-items: center;
+      }
+      .navigation-bar>p{
+          display: none;
+      }
+      .info-buttons{
+          flex-direction: column;
+          align-items: center;
+      }
+      .info-buttons>button{
+          margin-top: 2vh;
+          width: 80%;
+      }
+  }
