@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+}
+
+.first-slide{
+/*Use min-height: 100vh; for .first-slide to make it full-screen on different devices.*/
+    /*height: 900px;*/
+    height: 90vh;
+    background-image: url('../images/background1.jpg');
+    
+    /*background-image: url('../images/image.png');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navigation-bar {
+    background-color: rgba(245, 180, 180, 0.103);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;/* Space between logo, buttons, and menu */
+    align-items: center;
+
+}
+.navigation-bar>nav>ul{
+    display: flex;
+
+    gap: 30px;
+    list-style: none;
+}
+.navigation-bar>nav>ul>li>a{
+    display: block;
+    padding: 10px;
+    border-style: solid;
+    border-width: 0.5;
+    border-color: black;
+
+    color: rgb(255, 255, 255); /* Text color */
+}
+.navigation-bar>nav>ul>li>a:hover{
+    background-color: #AEAB56;
+}
+
+.header1{
+    background-color: #F85454;
+    /*width: 600px;*/
+    width: 30%;
+    display: inline-block;
+
+    padding: 25px 40px; 
+    margin-left: 40px;
+    margin-top: 80px;
+
+    display: flex;
+    align-items: center;  /* Centers vertically */
+    justify-content: flex-start;  /* Aligns text to the left */
+    padding-left: 20px; /* Adds space from the left */
+
+    color: #FEFFFC;
+    font-size:34px;
+    font-weight: bold; 
+}
+
+.text1{
+    width: 900px;
+    display: block;
+
+    margin-left: 40px;
+    margin-top: 40px; 
+
+    font-size: 28px;
+    font-weight:500;
+    color: #FEFFFC;
+}
+
+.info-buttons{
+    display:flex;
+    
+    margin-top: 220px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    justify-content: space-between;
+}
+
+.info-buttons>button{
+    background-color: #F2D687;
+    border-radius: 56px;
+
+    font-size: 30px;
+    font-weight:500;
+    padding: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+
+}
+
+.info-buttons>button:hover{
+
+    background: linear-gradient(to right, #BD5FF4, #6E378E);
+    
+}
