@@ -111,7 +111,7 @@
     height: 90vh;
     grid-template:  repeat(3,20vh) 25vh/ repeat(5,20%);
     
-    background-image: url('../images/bacground2.jpg');
+    background-image: url('../images/background2.jpg');
     
     background-repeat: no-repeat;
     background-size: cover;
