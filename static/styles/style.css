@@ -59,7 +59,7 @@
 
   .first-slide {
     padding-top: 30vh;
-    height: 180vh;
+    padding-bottom: 20vh;
     background-image: url('../images/background1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
