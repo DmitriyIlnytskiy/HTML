@@ -1,14 +1,6 @@
 *{
     margin: 0;
 }
-a::after {
-    content: " (link)"; /* Adds " (link)" after every <a> */
-    font-size: smaller;
-}
-p::before {
-    content: "<p>"; /* Adds ">" before every <li> */
-    color: blue;
-}
 
 /*******--------------------------------------
             margin-left: 4vh;
@@ -226,9 +218,6 @@ p::before {
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
-.offices :nth-child(2n){
-    background-color: lightgray;
-}
 
 .office-card{
     background-color: #FFFDFD;
@@ -245,6 +234,82 @@ p::before {
 }
 .office-card>ul>li{
     font-size: 2.5vh;
+}
+/**************************************************/
+
+.fourth-slide {
+    padding: 5vh 4vh;
+    background-color: #170D71;
+    text-align: left;
+    color: #FEFFFC;
+    position: relative;
+
+    display:flex;
+    align-items:stretch;
+}
+.text-content{
+    max-width: calc(100% - 100%/2 - 20px);
+}
+.fourth-header{
+    margin-bottom: 10px;
+    width: fit-content;
+    padding: 20px 80px 20px 20px;
+    justify-content: flex-start;
+    background-color: #D80707;
+    font-size: 3vh;
+}
+.fourth-text{
+    font-size: 2.5vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.fourth-image{
+    justify-content: flex-end;
+    width: calc(100%/3); 
+    height: auto; 
+    object-fit: cover; 
+    margin-left: auto;
+}
+
+.learn-more-button {
+    animation-name: pulseButton;
+
+    background-color: #D80707; 
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-size: 2.7vh;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition-timing-function: ease-in-out;
+}
+.learn-more-button>a{
+    text-decoration: none;/*remove underlining*/
+    color: #FEFFFC;
+}
+@keyframes pulseButton {
+    from {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    to {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+}
+
+.learn-more-button:hover{
+    background: linear-gradient(to right, #eb73c7, #ca1880);
+}
+
+footer>nav>ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
 }
 
 @media (max-width: 768px) {
