@@ -1,411 +1,527 @@
-*{
-    margin: 0;
-}
+/* Mobile-first */
 
-/*******--------------------------------------
-            margin-left: 4vh;
-            margin-right: 4vh;
----------------------------------------*******/
-.first-slide{
-    height: 90vh;
+* {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #FEFFFC;
+  }
+  
+
+  .navigation-bar {
+    position: sticky;
+    top: 0;
+    background-color: rgba(44, 32, 32, 0.486);
+    padding: 2vh;
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: -30vh;
+  }
+  .navigation-bar>#logo{
+    justify-self: flex-start;
+    height: fit-content;
+    width: 100px;
+    height: 70px;
+  }
+  
+  .navigation-bar>nav>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    list-style: none;
+    padding: 0;
+    color: #000000;
+  }
+  
+  .navigation-bar>nav>ul>li>a {
+    display: block;
+    padding: 1vh;
+    border: 0.5px solid black;
+    color: rgb(255, 255, 255);
+  }
+  
+  .navigation-bar>nav>ul>li>a:hover {
+    background-color: #AEAB56;
+  }
+  
+  .navigation-bar>#menu {
+    color: rgb(255, 255, 255);
+    margin-right: 5px;
+    padding: 1.5vh;
+    border: 0.5px solid black;
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+  }
+
+  /************* First Slide *********/
+
+  .first-slide {
+    padding-top: 30vh;
+    height: 180vh;
     background-image: url('../images/background1.jpg');
-    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-
-.navigation-bar {
-    position: sticky; top:0;
-
-    background-color: rgba(245, 180, 180, 0.103);
-    padding: 2vh 4vh;
-    display: flex;
-    justify-content: space-between;/* Space between logo, buttons, and menu */
-    align-items: center;
-
-}
-.navigation-bar>nav>ul{
-    display: flex;
-
-    gap: 3vh;
-    list-style: none;
-}
-.navigation-bar>nav>ul>li>a{
-    display: block;
-    /*padding: 10px;*/
-    padding: 1vh;
-    border-style: solid;
-    border-width: 0.5;
-    border-color: black;
-
-    color: rgb(255, 255, 255); /* Text color */
-
-    text-decoration: none;/*remove underlining*/
-}
-.navigation-bar>nav>ul>li>a:hover{
-    background-color: #AEAB56;
-}
-.navigation-bar>#menu{
-    color: rgb(255, 255, 255); 
-    margin-right: 40px;
-}
-
-#header1 {
-    background-color: #F85454;
-    display: inline-block;
-    width: 30%;
-    max-width: 600px;
-
-    padding: 2.5vh 4vh;
-    margin-left: 4vh;
-    margin-top: 8vh;
-
-    display: flex;
-    align-items: center;  
-    justify-content: flex-start; 
-
-    color: #FEFFFC;
-    font-size: 3.5vh; 
-    font-weight: bold; 
-}
-
-.text1 {
-    display: block;
-    width: 90%;
-    max-width: 900px;
-    margin-left: 4vh;
-    margin-top: 4vh;
-
-    color: #FEFFFC;
-    font-size: 2.5vh; 
-}
-
-.info-buttons{
-    display:flex;
+  }
     
-    margin-top: 22vh;
-    margin-left: 4vh;
-    margin-right: 4vh;
-
-    justify-content: space-between;
-}
-
-.info-buttons>button{
+  #header1 {
+    background-color: #F85454;
+    width: auto;
+    margin: 5vh auto;
+    padding: 2.5vh 4vh;
+    text-align: center;
+    color: #FEFFFC;
+    font-size: 4vh;
+    font-weight: bold;
+  }
+  
+  .text1 {
+    width: 90%;
+    margin: 5vh auto;
+    color: #FEFFFC;
+    font-size: 2.5vh;
+    text-align: center;
+  }
+  
+  .info-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    margin-top: 10vh;
+  }
+  
+  .info-buttons>button {
     background-color: #F2D687;
     border-radius: 56px;
-
     font-size: 3vh;
-    font-weight:500;
-    padding: 3vh;
-    padding-left: 4vh;
-    padding-right: 4vh;
-
-}
-.info-buttons a{
-    text-decoration: none;/*remove underlining*/
+    font-weight: 500;
+    padding: 3vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+  
+  .info-buttons img {
+    max-width: 30%;
+    height: 3vh;
+    object-fit: contain;
+    margin-right: 1vh;
+  }
+  
+  .info-buttons a {
+    text-decoration: none;
     color: black;
-}
-
-.info-buttons>button:hover{
-
+  }
+  
+  .info-buttons>button:hover {
     background: linear-gradient(to right, #BD5FF4, #6E378E);
-    
-}
-/**************************************************/
-.second-slide{
-    display: grid;
-    height: 90vh;
-    grid-template:  repeat(3,20vh) 25vh/ repeat(5,20%);
-    
+  }
+  
+  /*************** Second slide **************/
+  .second-slide {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 4vh;
     background-image: url('../images/background2.jpg');
-    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
-}
-#header2{
-    margin-left: 4vh;
-    margin-right: 4vh;
-
-    width: 45%;
-    grid-column: 1/3;
-    justify-self:start;
-    align-self:center;
-
-    padding: 2.5vh 4vh;
+  }
+  
+  #header2,
+  #left-text,
+  #right-text,
+  #button-get-estimate,
+  #bottom-text {
+    width: 90%;
+    margin: 2vh auto;
+    text-align: start;
+  }
+  
+  #header2 {
     background-color: #F85454;
     color: #FEFFFC;
-    font-size: 3vh; 
-    font-weight: bold; 
-}
-.second-slide>#left-text{
-    margin-left: 4vh;
-    margin-right: 4vh;
-
-    grid-area: 2/1/4/3;
-    justify-self:start;
-    align-self:center;
-
-    font-size: 2.5vh;
-}
-.second-slide>#right-text{
-    margin-left: 4vh;
-    margin-right: 4vh;
-    
-    grid-area:1/4/3/6;
-    justify-self:start;
-    align-self:center;
-
-    font-size: 2.5vh;
-}
-.second-slide>#button-get-estimate{
-    margin-left: 4vh;
-    margin-right: 4vh;
-
-    justify-self:start;
-    align-self:center;
-
-    grid-area: 3/4/4/6;
+    font-size: 3vh;
+    font-weight: bold;
     padding: 2.5vh 4vh;
+  }
+  
+  #left-text,
+  #right-text  {
+    font-size: 2.5vh;
+  }
+  
+  #button-get-estimate {
     background-color: #F85454;
     color: #FEFFFC;
-    font-size: 3vh; 
-    font-weight: bold; 
-}
-.second-slide>#button-get-estimate>a{
-    text-decoration: none;/*remove underlining*/
-    color: #FEFFFC;
-}
-.second-slide>#button-get-estimate:hover{
-    background: linear-gradient(to right, #BD5FF4, #6E378E);
-}
-.second-slide>#bottom-text{
-    margin-left: 4vh;
-    margin-right: 4vh;
-
-    justify-self:center;
-    grid-area:4/2/5/5;
-}
-
-.second-slide>#bottom-text>#header{
-    align-self:start;
-    justify-self: center;
-    
-    font-size: 2.8vh;
-    font-weight: bold; 
-}
-.second-slide>#bottom-text>#text{
-    align-self: center;
-    justify-self: center;
-    font-size: 2.5vh;
-}
-/**************************************************/
-.third-slide{
-    height: 100vh;
-    background-color: #F5E7BC;
-}
-
-.offices{
-    display: grid;
-    grid-template:  repeat(4,20vh) / repeat(3,28%);
-    grid-column-gap: 8%;
-    grid-row-gap: 4vh;
-
-    margin-left: 4vh;
-    margin-right: 4vh;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-}
-
-.office-card{
-    background-color: #FFFDFD;
-    display: flex; 
-    justify-content: left; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    
+    font-size: 3vh;
+    font-weight: bold;
     padding: 3vh;
-}
-
-.office-card>ul{
+  }
+  
+  #button-get-estimate:hover {
+    background: linear-gradient(to right, #BD5FF4, #6E378E);
+  }
+  
+  #bottom-text>#header {
+    font-size: 2.8vh;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #bottom-text>#text {
+    font-size: 2.5vh;
+    text-align: center;
+  }
+  
+  /************ Third Slide *************/
+  .third-slide {
+    height: auto;
+    background-color: #F5E7BC;
+  }
+  
+  .offices {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5vh 4vh;
+  }
+  
+  .office-card {
+    background-color: #FFFDFD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 2vh auto;
+    padding: 3vh;
+    text-align: center;
+  }
+  
+  .office-card>ul {
     list-style: none;
     padding-left: 0;
-}
-.office-card>ul>li{
+  }
+  
+  .office-card>ul>li {
     font-size: 2.5vh;
-}
-/**************************************************/
+    justify-self: start;
+  }
+  
+  /********** Fourth Slide **********/
 
-.fourth-slide {
+  .fourth-slide {
     padding: 5vh 4vh;
     background-color: #170D71;
     text-align: left;
     color: #FEFFFC;
-    position: relative;
-
-    display:flex;
-    align-items:stretch;
-}
-.text-content{
-    max-width: calc(100% - 100%/2 - 20px);
-}
-.fourth-header{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .text-content {
+    max-width: 100%;
+    justify-content: center;
+  }
+  
+  .fourth-header {
     margin-bottom: 10px;
     width: fit-content;
-    padding: 20px 80px 20px 20px;
-    justify-content: flex-start;
+    padding: 20px;
     background-color: #D80707;
-    font-size: 3vh;
-}
-.fourth-text{
     font-size: 2.5vh;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-}
-.fourth-image{
-    justify-content: flex-end;
-    width: calc(100%/3); 
-    height: auto; 
-    object-fit: cover; 
-    margin-left: auto;
-}
-
-.learn-more-button {
+  }
+  
+  .fourth-text {
+    font-size: 2.5vh;
+    margin: 3vh 0;
+  }
+  
+  .fourth-image {
+    width: 50%;
+    margin: 2vh auto;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .learn-more-button {
     animation-name: pulseButton;
-
-    background-color: #D80707; 
+    background-color: #D80707;
     border: 1px solid black;
     padding: 10px 20px;
     font-size: 2.7vh;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
-
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     transition-timing-function: ease-in-out;
-}
-.learn-more-button>a{
-    text-decoration: none;/*remove underlining*/
+  }
+  
+  .learn-more-button>a {
+    text-decoration: none;
     color: #FEFFFC;
-}
-@keyframes pulseButton {
+  }
+  
+  @keyframes pulseButton {
     from {
-        transform: scale(1);
-        opacity: 0.8;
+      transform: scale(1);
+      opacity: 0.8;
     }
     to {
-        transform: scale(1.05);
-        opacity: 1;
+      transform: scale(1.05);
+      opacity: 1;
     }
-}
-
-.learn-more-button:hover{
+  }
+  
+  .learn-more-button:hover {
     background: linear-gradient(to right, #eb73c7, #ca1880);
-}
-
-footer>nav>ul{
+  }
+  
+  
+  footer>nav>ul {
     display: flex;
     list-style: none;
     justify-content: space-around;
-}
+  }
 
-@media (max-width: 768px) {
+  /************** Fifth Slide *****************/
 
+  .fifth-slide{
+    background: url(../images/background3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding: 5vh 4vh;
+
+  }
+  #header5{
+    margin-bottom: 10px;
+    width: fit-content;
+    font-size: 3vh;
+
+    text-align: center;
+
+    margin: 2vh auto;
+  }
+  .video-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10vw;
+  }
+  #left-side5{
+    width: 60%;
+    height: auto;
+    margin: 2vh auto;
+  }
+  #right-side5{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+  }
+  #right-side5>p{
+    font-size: 2.5vh;
+  }
+  #right-side5>h3{
+    font-weight: bold;
+    font-size: 2.7vh;
+  }
+  #right-button5{
+    background-color: #D80707;
+    border: 1px solid black;
+    color: #FEFFFC;
+    padding: 10px 20px;
+    font-size: 2.8vh;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  /******** Footer *******/
+  footer{
+    background-color: #000000;
+  }
+  footer>h2{
+    padding: 5vh;
+    color: #FFFFFF;
+    font-size: 5vh;
+    text-align: center;
+  }
+  .associations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8vh;
+  }
+  .footer-img{
+    width: calc(100%/3);
+  }
+  
+
+  /* Larger screens — Desktop styles */
+  @media (min-width: 768px) {
     .first-slide {
-        height: 180vh; /* Increased height to fit all content */
+      height: 90vh;
     }
-    /* Adjust Navigation Bar */
+  
     .navigation-bar {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 2vh 4vh;
+    }
+  
+    .navigation-bar>nav>ul {
+      flex-direction: row;
+      gap: 3vh;
+    }
+  
+    #header1 {
+      width: 30%;
+      max-width: 600px;
+      margin-left: 4vh;
+      margin-top: 8vh;
+      text-align: left;
+    }
+  
+    .text1 {
+      width: 90%;
+      max-width: 900px;
+      margin-left: 4vh;
+      margin-top: 4vh;
+      text-align: left;
+    }
+  
+    .info-buttons {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 4vw;
+      margin-right: 4vw;
+      margin-top: 22vh;
+    }
+  
+    .info-buttons>button {
+        background-color: #F2D687;
+        border-radius: 56px;
+        font-size: 2.2vh;
+        font-weight: 500;
+        padding: 2vh 3vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+    }
+  
+    /***********Second****************/
+    .second-slide {
+      display: grid;
+      height: 80vh;
+      grid-template: repeat(3, 20vh) 25vh / repeat(5, 20%);
+    }
+  
+    #header2 {
+      width: 60%;
+      grid-column: 1/3;
+      justify-items: start;
+      align-self: center;
+      margin-left: 2vh;
+    }
+  
+    .second-slide>#left-text {
+      grid-area: 2/1/4/3;
+      justify-self: start;
+      align-self: center;
+    }
+  
+    .second-slide>#right-text {
+      grid-area: 1/4/3/6;
+      justify-self: start;
+      align-self: center;
+    }
+  
+    .second-slide>#button-get-estimate {
+      grid-area: 3/4/4/6;
+      justify-self: start;
+      align-self: center;
+    }
+  
+    .second-slide>#bottom-text {
+      grid-area: 4/2/5/5;
+      justify-self: center;
+      text-align: center;
+    }
+    /*************Third***********************/
+  
+    .offices {
+      display: grid;
+      grid-template: repeat(4, 20vh) / repeat(3, 28%);
+      grid-column-gap: 8%;
+      grid-row-gap: 4vh;
+    }
+  
+    .office-card {
+        background-color: #FFFDFD;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin: 2vh auto;
+        padding: 1vh;
+        text-align: center;
+      }
+  
+    /*****************Fourth************************/
+    .fourth-slide {
+      flex-wrap: nowrap;
+      align-items: stretch;
+    }
+  
+    .text-content {
+      max-width: calc(100% - 100%/2 - 20px);
+    }
+  
+    .fourth-image {
+      width: calc(100% / 3);
+      margin-left: auto;
+    }
+  
+    .fourth-header {
+      font-size: 3vh;
+    }
+
+    /***************** Fifth ************************/
+    .video-text{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10vw;
+    }
+    #header5{
+        font-size: 3.5vh;
+    }
+    #left-side5{
+        width: 280%;
+    }
+
+/******** Footer *******/
+   .associations{
+    margin: 2vh auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5vh;
         padding: 2vh;
     }
-
-    .navigation-bar>#menu{
-        color: rgb(255, 255, 255); 
-        margin-right: 5px;
-    }
-    
-    .navigation-bar>nav>ul {
-        flex-direction: column;
-        gap: 2vh;
-        padding: 0;
-    }
-
-   
-
-    /* Adjust Header & Text */
-    #header1 {
-        width: auto;
-        font-size: 4vh;
-        margin: 5vh auto;
-        text-align: center;
-        padding: 0;
-    }
-
-    .text1 {
-        width: 90%;
-        font-size: 2.5vh;
-        margin: 5vh auto;
-        text-align: center;
-    }
-
-    /* Stack Info Buttons Vertically */
-    .info-buttons {
-        flex-direction: column;
-        align-items: center;
-        gap: 2vh;
-    }
-
-    .info-buttons>button {
-        width: 90%;
-        padding: 3vh;
-        font-size: 3vh;
-    }
-
-    /*************************************/
-    /* Adjust Second Slide Layout */
-    .second-slide {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        padding: 4vh;
-    }
-
-    #header2{
-        width: auto;
-        margin: 2vh auto;
-        text-align: center;
-    }
-    #left-text, #right-text, #button-get-estimate, #bottom-text {
-        width: 90%;
-        margin: 2vh auto;
-        text-align: center;
-    }
-
-    #right-text {
-        padding: 0;
-    }
-
-    #button-get-estimate {
-        padding: 3vh;
-        font-size: 3vh;
-    }
-
-    /********************************/
-    /* Adjust Third Slide Layout */
-    .third-slide{
-        height: auto;
-    }
-    .offices{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .office-card{
-        width: 90%;
-        margin: 2vh auto;
-        text-align: center;
+    .footer-img{
+        width: calc(100%/4 - 4vh);
     }
 
 }
+  

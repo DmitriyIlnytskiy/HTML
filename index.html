@@ -12,23 +12,27 @@
 
 <body>
 
+    <section class="navigation-bar">
+
+        <img id="logo" src="static/images/logo.png" alt="Logo">
+
+        <nav class="navigation-bar-buttons">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Customer Resourses</a></li>
+            </ul>
+        </nav>
+
+        <button id="menu">
+            <p>Menu</p>
+        </button>
+    </section>
+
     <div class="first-slide">
-        <section class="navigation-bar">
-
-            <p style="margin-left: 5px;"><img src="static/images/logo.png" alt="Logo" width="100" height="70"></p>
-
-            <nav class="navigation-bar-buttons">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Locations</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Customer Resourses</a></li>
-                </ul>
-            </nav>
-
-            <p id="menu">Menu</p>
-        </section>
-
+        
+    
         <h2 id="header1">PAVING THE WAY FOR TEXAS</h2>
 
         <p class="text1">When you combine world-class materials production with deep local knowledge, you get Texas
@@ -38,14 +42,18 @@
             excellence and make the monumental possible.</p>
 
         <section class="info-buttons">
-            <button><img src="static/images/icon-materials.svg" alt="car" width="80px" height="30px"><a
-                    href="#">Materials</a></button>
-            <button><img src="static/images/icon-constructions.svg" alt="car" width="80px" height="30px"><a
-                    href="#">Constructions</a></button>
-            <button><img src="static/images/icon-services.svg" alt="car" width="80px" height="30px"><a
-                    href="#">Services</a></button>
-            <button><img src="static/images/icon-careers.svg" alt="car" width="80px" height="30px"><a
-                    href="#">Careers</a></button>
+            <button><img src="static/images/icon-materials.svg" alt="car">
+                <a href="#">Materials</a>
+            </button>
+            <button><img src="static/images/icon-constructions.svg" alt="car">
+                <a href="#">Constructions</a>
+            </button>
+            <button><img src="static/images/icon-services.svg" alt="car">
+                <a href="#">Services</a>
+            </button>
+            <button><img src="static/images/icon-careers.svg" alt="car">
+                <a href="#">Careers</a>
+            </button>
         </section>
 
     </div>
@@ -71,7 +79,10 @@
             <li>Parking lot pavers</li>
         </ul>
 
-        <p id="button-get-estimate"><a href="#">Get an estimate on your project</a></p>
+        <button id="button-get-estimate">
+            <p><a href="#">Get an estimate on your project</a></p>
+        </button>
+
 
         <div id="bottom-text">
             <p id="header">Our Territory</p>
@@ -207,34 +218,55 @@
 
         </section>
     </div>
-
     <div class="fourth-slide">
         <div class="text-content">
             <h2 class="fourth-header">A LONG ROAD BEHIND US <br> A BRIGHT FUTURE AHEAD</h2>
-            <p class="fourth-text">As part of CRH Americas Materials, Texas Materials is a part of the leading materials business in the world.
-                That success comes from an unswerving commitment to innovating in an industry that is as old as civilization
-                itself. Our reputation is also based on our long roots in Texas, with our history stretching back as far as
+            <p class="fourth-text">As part of CRH Americas Materials, Texas Materials is a part of the leading materials
+                business in the world.
+                That success comes from an unswerving commitment to innovating in an industry that is as old as
+                civilization
+                itself. Our reputation is also based on our long roots in Texas, with our history stretching back as far
+                as
                 a century in this state.
-            </p>       
+            </p>
 
             <button class="learn-more-button">
-                <a href="https://dmitriyilnytskiy.github.io/ugly-page-html-/">Learn more about our sustainability initiatives</a>
+                <a href="https://dmitriyilnytskiy.github.io/ugly-page-html-/">Learn more about our sustainability
+                    initiatives</a>
             </button>
         </div>
 
         <img class="fourth-image" src="static/images/image4.jpg" alt="img4">
     </div>
 
+    <div class="fifth-slide">
+        <h2 id="header5">Ethics to Match <br> Our Work Ethic</h2>
+
+        <div class="video-text">
+            <img id="left-side5" src="/static/images/home-video-img 1.png" alt="video">
+
+            <div id="right-side5">
+                <p>We are a company driven by the curiosity, ambition, and compassion of our people. Every ounce of
+                    building material we pour into each project is matched by an equal amount of passion for building a
+                    better Texas. We live here, work here, and care about our community, working with Habitat for
+                    Humanity to donate our expertise to those in need.</p>
+                <h3>See our ethics in action</h3>
+                <button id="right-button5">
+                    <p>Whatch our story</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
 </body>
 <footer>
-    <p>2024 Texas Materials. All rights reserved.</p>
-    <nav>
-        <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </nav>
+    <h2>Our Associations</h2>
+    <div class="associations">
+        <img class="footer-img" src="/static/images/NAPALogo.png" alt="1">
+        <img class="footer-img" src="/static/images/NRMCA-Logo.png" alt="2">
+        <img class="footer-img" src="/static/images/NSSGA-Logo.png" alt="3">
+        <img class="footer-img" src="/static/images/PCA-Logo.png" alt="4">
+    </div>
 </footer>
 
 </html>
