@@ -1,4 +1,4 @@
-![4](https://github.com/user-attachments/assets/f771516c-7591-490e-ade6-bd2690ba2e05)Primary keywords
+Primary keywords
 
 construction, building, materials, service, asphalt, crh, supplies, weld, pavement, sand, repair,
 patching, contractors, 
