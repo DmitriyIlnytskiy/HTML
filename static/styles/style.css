@@ -8,6 +8,7 @@
     color: #FEFFFC;
   }
   
+
   .navigation-bar {
     position: sticky;
     top: 0;
@@ -327,7 +328,7 @@
     flex-direction: column;
     gap: 5vh;
   }
-  #right-side5>p{
+  #right-side5>a{
     font-size: 2.5vh;
   }
   #right-side5>h3{
@@ -507,6 +508,9 @@
     }
     #left-side5{
         width: 280%;
+    }
+    #right-side5{
+      font-size: 2.5vh;
     }
 
 /******** Footer *******/
